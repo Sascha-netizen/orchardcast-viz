@@ -3,7 +3,7 @@ import plotly.express as px
 
 df = pd.read_parquet("pozo_night_2020-02-22.parquet")
 
-# 1. Keep only rows inside the box
+# 1. Keep only rows inside the box (10km by 10km)
 df = df[df["in_box"] == True]
 
 # 2. Keep only the rows for the peak hour
